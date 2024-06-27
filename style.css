@@ -35,7 +35,7 @@ body{
   margin-top: 20px;
   padding: 10px 10px;
 }
-.input {
+#imageUrl {
   width: 290px;
   height: 45px;
   font-family: Ubuntu;
@@ -50,13 +50,13 @@ body{
   margin-top: 30px;
 }
 
-.input:valid {
+#imageUrl:valid {
   border-color:#f38f7eed;
   color: #f38f7eed;
   box-shadow: 2px 2px 8px 1px #f38f7eed;
 }
 
-.input:invalid {
+#imageUrl:invalid {
   border-color: #16d4ed;
   color:#16d4ed;
   box-shadow: 2px 2px 8px 1px #16d4ed;
@@ -81,6 +81,7 @@ body{
   transition: .4s;
   margin-top: 30px;
   font-family: Ubuntu;
+  margin-bottom: 25px;
  }
  
  .btn span:last-child {
@@ -99,10 +100,36 @@ body{
  }
  
  
-.tag a{ 
-  margin-top: 20px;
+.tag a { 
+  margin-top: 40px;
   font-size: 1rem;
   font-family: Ubuntu;
   text-decoration: none;
   color: #16d4ed;
+}
+
+.tag a:hover{
+  text-decoration: underline;
+  color: #f38f7eed ;
+}
+
+@media screen and (max-width: 600px) {
+  .body{
+    width:350px;
+    height: 500px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.245);
+  }
+  .heading h1{
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  #imageUrl{
+    margin-top: 50px;
+    
+  }
+  .btn{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
 }
